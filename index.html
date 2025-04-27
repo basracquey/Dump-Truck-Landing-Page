@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DumpTruck Pro - Sewa Dump Truck Profesional</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="container">
+        <a href="/" class="logo">DumpTruck Pro</a>
+        <div class="nav-links">
+          <a href="#home" class="nav-link active">Beranda</a>
+          <a href="#fleet" class="nav-link">Armada</a>
+          <a href="#about" class="nav-link">Tentang</a>
+          <a href="#contact" class="nav-link">Kontak</a>
+          <a href="#contact" class="btn btn-primary contact-btn"
+            >Hubungi Kami</a
+          >
+        </div>
+        <button class="mobile-menu-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Toast Notifications -->
+    <div id="toast" class="toast"></div>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text" data-aos="fade-up">
+            <h1>Sewa Dump Truck Profesional</h1>
+            <p>
+              Penyedia jasa sewa dump truck terpercaya di Jawa. Kami menyediakan
+              armada modern untuk kebutuhan proyek konstruksi dan pertambangan
+              Anda.
+            </p>
+            <div class="hero-buttons">
+              <button
+                class="btn btn-primary"
+                onclick="scrollToSection('fleet')"
+              >
+                Lihat Armada
+              </button>
+              <button
+                class="btn btn-outline"
+                onclick="scrollToSection('about')"
+              >
+                Tentang Kami
+              </button>
+            </div>
+          </div>
+          <div class="hero-image" data-aos="fade-left">
+            <img
+              alt="Modern dump truck"
+              src="https://images.unsplash.com/photo-1690913967178-572a48f8f720"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2>Mengapa Memilih Kami</h2>
+          <p>Solusi transportasi material yang handal dan profesional</p>
+        </div>
+        <div class="features-grid">
+          <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon">🚛</div>
+            <h3>Armada Modern</h3>
+            <p>Dump truck dengan kondisi prima dan perawatan berkala</p>
+          </div>
+          <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon">🛡️</div>
+            <h3>Tersertifikasi</h3>
+            <p>Operator berpengalaman dan tersertifikasi</p>
+          </div>
+          <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon">⏰</div>
+            <h3>Dukungan 24/7</h3>
+            <p>Layanan pelanggan dan bantuan teknis 24 jam</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Fleet Section -->
+    <section id="fleet" class="fleet">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2>Armada Kami</h2>
+          <p>Berbagai pilihan dump truck untuk kebutuhan proyek Anda</p>
+        </div>
+        <div class="fleet-grid">
+          <div class="truck-card" data-aos="fade-up" data-aos-delay="100">
+            <img
+              alt="6 wheeler dump truck"
+              src="https://images.unsplash.com/photo-1685708754965-8ce49dc34a4c"
+            />
+            <div class="truck-info">
+              <h3>Dump Truck 6 Roda</h3>
+              <p class="capacity">Kapasitas: 8 Ton</p>
+              <p>Ideal untuk proyek konstruksi skala menengah</p>
+              <ul>
+                <li>Mesin Mitsubishi</li>
+                <li>GPS Tracking</li>
+                <li>Perawatan Rutin</li>
+              </ul>
+              <button
+                class="btn btn-primary"
+                onclick="openContactForm('Dump Truck 6 Roda')"
+              >
+                Sewa Sekarang
+              </button>
+            </div>
+          </div>
+          <div class="truck-card" data-aos="fade-up" data-aos-delay="200">
+            <img
+              alt="10 wheeler dump truck"
+              src="https://images.unsplash.com/photo-1685708754965-8ce49dc34a4c"
+            />
+            <div class="truck-info">
+              <h3>Dump Truck 10 Roda</h3>
+              <p class="capacity">Kapasitas: 15 Ton</p>
+              <p>Cocok untuk pengangkutan material tambang</p>
+              <ul>
+                <li>Mesin Hino</li>
+                <li>Sistem Hidrolik Modern</li>
+                <li>Kabin Nyaman</li>
+              </ul>
+              <button
+                class="btn btn-primary"
+                onclick="openContactForm('Dump Truck 10 Roda')"
+              >
+                Sewa Sekarang
+              </button>
+            </div>
+          </div>
+          <div class="truck-card" data-aos="fade-up" data-aos-delay="300">
+            <img
+              alt="Heavy duty dump truck"
+              src="https://images.unsplash.com/photo-1685708754965-8ce49dc34a4c"
+            />
+            <div class="truck-info">
+              <h3>Dump Truck Heavy Duty</h3>
+              <p class="capacity">Kapasitas: 25 Ton</p>
+              <p>Untuk proyek pertambangan skala besar</p>
+              <br />
+              <ul>
+                <li>Mesin Scania</li>
+                <li>Teknologi Euro 4</li>
+                <li>Sistem Keamanan Lengkap</li>
+              </ul>
+              <button
+                class="btn btn-primary"
+                onclick="openContactForm('Dump Truck Heavy Duty')"
+              >
+                Sewa Sekarang
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-text" data-aos="fade-right">
+            <h2>Tentang Kami</h2>
+            <p>
+              Sejak 2010, kami telah menjadi mitra terpercaya dalam penyediaan
+              layanan sewa dump truck untuk berbagai proyek di seluruh Jawa.
+              Dengan pengalaman lebih dari 14 tahun, kami memahami kebutuhan
+              spesifik setiap proyek.
+            </p>
+            <div class="achievements">
+              <div class="achievement">
+                <h3>900+</h3>
+                <p>Proyek Selesai</p>
+              </div>
+              <div class="achievement">
+                <h3>100+</h3>
+                <p>Unit Armada</p>
+              </div>
+              <div class="achievement">
+                <h3>100+</h3>
+                <p>Klien Puas</p>
+              </div>
+            </div>
+          </div>
+          <div class="about-image" data-aos="fade-left">
+            <img
+              alt="Company office"
+              src="https://images.unsplash.com/photo-1633544861836-601f62b8a66c"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2>Hubungi Kami</h2>
+          <p>Diskusikan kebutuhan proyek Anda dengan tim kami</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info" data-aos="fade-right">
+            <div class="info-card">
+              <h3>Informasi Kontak</h3>
+              <div class="info-item">
+                <span class="icon">📞</span>
+                <p>+62 812-3456-7890</p>
+              </div>
+              <div class="info-item">
+                <span class="icon">📧</span>
+                <p>info@dumptruckpro.id</p>
+              </div>
+              <div class="info-item">
+                <span class="icon">📍</span>
+                <p>Jl. Raya Industri No. 123, Bekasi, Jawa Barat</p>
+              </div>
+              <div class="info-item">
+                <span class="icon">⏰</span>
+                <p>Senin - Sabtu: 08:00 - 17:00</p>
+              </div>
+            </div>
+            <div class="map">
+              <img
+                alt="Office location"
+                src="https://images.unsplash.com/photo-1492701960847-abf2dde816ee"
+              />
+            </div>
+          </div>
+          <form id="contactForm" class="contact-form" data-aos="fade-left">
+            <div class="form-group">
+              <label for="name">Nama Lengkap</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Nomor Telepon</label>
+              <input type="tel" id="phone" name="phone" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Pesan</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-info">
+            <h3>DumpTruck Pro</h3>
+            <p>Penyedia jasa sewa dump truck terpercaya di Jawa, Indonesia.</p>
+          </div>
+          <div class="footer-links">
+            <h4>Menu</h4>
+            <a href="#home">Beranda</a>
+            <a href="#fleet">Armada</a>
+            <a href="#about">Tentang</a>
+            <a href="#contact">Kontak</a>
+          </div>
+          <div class="footer-services">
+            <h4>Layanan</h4>
+            <p>Sewa Harian</p>
+            <p>Sewa Bulanan</p>
+            <p>Kontrak Proyek</p>
+            <p>Maintenance</p>
+          </div>
+          <div class="footer-contact">
+            <h4>Kontak</h4>
+            <p>📞 +62 812-3456-7890</p>
+            <p>📧 info@dumptruckpro.id</p>
+            <p>📍 Jl. Raya Industri No. 123, Bekasi</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 DumpTruck Pro. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
